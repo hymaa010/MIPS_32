@@ -2,6 +2,9 @@
 
 A 32-bit single-cycle MIPS processor implemented in Verilog. This project supports a subset of the MIPS instruction set and demonstrates core components of a CPU datapath.
 
+![image](https://github.com/user-attachments/assets/d4628ea8-c20c-4d60-a765-be7dac9c78c7)
+
+
 ## Features
 - **Supported Instructions**: `lw`, `sw`, `addi`, `beq`, `j`, and R-type instructions (`add`, `sub`, `and`, `or`, `slt`).
 - **Key Components**:
@@ -29,6 +32,9 @@ A 32-bit single-cycle MIPS processor implemented in Verilog. This project suppor
 - Generates control signals based on opcode.
 - **Input**: `[5:0] op` (instruction opcode).
 - **Outputs**: `regdst`, `branch`, `memread`, `memtoreg`, `memwrite`, `alusrc`, `regwrite`, `jump`, `aluop`.
+  
+  ![image](https://github.com/user-attachments/assets/aef1ceb8-8ca3-4273-986c-976f429e05a0)
+
 
 ### 4. `ALUControl`
 - Decodes ALU operation from `ALUOp` and `funct` field.
